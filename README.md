@@ -1,4 +1,4 @@
-# SQL Customer Analysis Project
+# SQL Business Analysis Project
 
 This project analyzes customer and streaming platform data using SQL.
 
