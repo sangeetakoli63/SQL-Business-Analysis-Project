@@ -88,11 +88,6 @@ This project uses three datasets:
 SELECT COUNT(*)
 FROM Users
 WHERE email LIKE '%.com';
-
-SELECT first_name, COUNT(*) AS name_count
-FROM users
-GROUP BY first_name
-ORDER BY name_count DESC;
 ```
 
 ### Duplicate Name Analysis
