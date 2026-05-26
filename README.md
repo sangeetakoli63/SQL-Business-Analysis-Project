@@ -93,35 +93,44 @@ SELECT first_name, COUNT(*) AS name_count
 FROM users
 GROUP BY first_name
 ORDER BY name_count DESC;
+```
 
 ### Duplicate Name Analysis
 
+```sql
 SELECT first_name, COUNT(*) AS name_count
 FROM users
 GROUP BY first_name
 ORDER BY name_count DESC;
+```
 
 ### Watch Duration Distribution
 
+```sql
 SELECT
 ROUND(duration/60.0,0) as minute_bucket,
 COUNT(*) as event_count
 FROM watch_history
 GROUP BY ROUND(duration/60.0,0);
+```
 
 ### Revenue Analysis
 
+```sql
 SELECT user_id,SUM(amount) as total_payment
 FROM payments
 WHERE status='paid'
 GROUP BY user_id;
+```
 
 ### User Engagement Analysis
 
+```sql
 SELECT user_id,SUM(duration) as total_watch_duration
 FROM watch_history
 GROUP BY user_id
 HAVING SUM(duration) > 400;
+```
 
 ## 📌 Key Insights
 
